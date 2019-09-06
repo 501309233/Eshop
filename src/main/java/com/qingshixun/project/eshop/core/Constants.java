@@ -19,7 +19,7 @@ import com.qingshixun.project.eshop.module.config.listener.LoadConfigListener;
 public class Constants {
 
     // 获取商品图片路径
-    public static final String PRODUCT_IMAGE_PATH = LoadConfigListener.getConfig("image.get.path");;
+    public static final String PRODUCT_IMAGE_PATH = LoadConfigListener.getConfig("image.get.path");
     // 分页数
     public static Integer PAGE_SIZE = 8;
     // 加密key

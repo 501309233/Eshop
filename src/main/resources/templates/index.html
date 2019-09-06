@@ -29,7 +29,7 @@
     <div id="banner_tabs" class="flexslider banner-bar fr">
       <ul class="slides imgBox">
         <li th:each="advertisement : ${advertisements}">
-          <a title="" target="_blank"> <img width="1000" height="454" th:src="@{/images/{image}(image=${advertisement.image})}"></a>
+          <a title="" target="_blank" href="#" th:href="@{/promo/promoPage}"> <img width="1000" height="454" th:src="@{/images/{image}(image=${advertisement.image})}"></a>
         </li>
       </ul>
       <ul class="flex-direction-nav">
