@@ -20,7 +20,6 @@ import java.util.stream.Collectors;
 
 @Controller("promo")
 @RequestMapping("/promo")
-//@CrossOrigin(allowCredentials = "true",origins = "*")
 public class PromoController extends BaseController{
     @Autowired
     PromoService promoService;

@@ -2,6 +2,8 @@ package com.qingshixun.project.eshop.module.promo.service.model;
 
 import org.joda.time.DateTime;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 public class PromoModel {
@@ -21,12 +23,16 @@ public class PromoModel {
     private Long itemId;
 
     //商品原价////
+    @NotNull(message = "商品价格不能为空")
+    @Min(value = 0, message = "商品价格不能为0")
     private BigDecimal itemPrice;
 
     //商品图片存储路径////
     private String productImage;
 
     //活动商品秒杀价格
+    @NotNull(message = "商品价格不能为空")
+    @Min(value = 0, message = "商品价格不能为0")
     private BigDecimal promoItemPrice;
 
     //活动商品秒杀数量
